@@ -53,9 +53,12 @@ console.log(response);
       userName,
       password,
     });
+  console.log(res);
   
     if (res?.ok && !res.error) {
-      router.push(`/user`); // or wherever
+      // Force full reload to refresh session and state
+      window.location.href = '/user';
+      return;
     } else {
       setMessage('Invalid username or password');
     }
@@ -160,7 +163,7 @@ console.log(response);
               disabled={isLoading}
               className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center"
             >
-             
+              {isLoading ? 'Signing in...' : 'Sign In'}
             </button>
           </form>
         )}

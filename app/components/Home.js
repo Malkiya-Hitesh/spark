@@ -69,7 +69,7 @@ function Home() {
                         width={80000}
                         height={80000}
                         alt='hero main' />
-                    {/* <Image className='absolute bottom-0 w-full right-0 '
+                    <Image className='absolute bottom-0 w-full right-0 '
                         src='/image/bg.png'
                         width={1000}
                         height={800}
@@ -89,8 +89,8 @@ function Home() {
                         width={1000}
                         height={1000}
                         alt='hero top' />
-                     */}
-                    {/* Plant in bowl decoration */}
+                    
+
                   
                 </div>
                 <IconsRow/>

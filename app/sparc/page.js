@@ -5,7 +5,7 @@ import { IconsRow } from '../components/IconsRow'
 
 function page() {
     return (
-        <section className='mt-24 flex justify-center items-center pb-8 gap-4 flex-col bg-[var(--white-color)] pt-6'>
+        <section className='mt-24 flex justify-center items-center pb-8 gap-7 flex-col bg-[var(--white-color)] pt-6'>
             <div className='grid grid-cols-2 justify-center overflow-hidden'>
                 <div className="flex justify-center items-center">
                     <Image
