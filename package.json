@@ -3,12 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
-    "build:static": "node build-static.js",
-    "start": "next start",
-    "lint": "eslint",
-    "export": "next build && next export"
+    "start": "next start"
   },
   "dependencies": {
     "axios": "^1.12.2",

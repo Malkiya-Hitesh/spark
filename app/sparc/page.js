@@ -23,7 +23,7 @@ function page() {
                     <h2 className=' font-[800] text-[5rem]'>
                         <span>OPEN !</span>
                     </h2>
-                    <p className='font-[400] text-[2rem] text-[var(--text-color)]'>let the chanllenge begin !</p>
+                    <p className='font-[400] text-[2rem] text-[var(--text-color)]'>let the challenge begin !</p>
                 </div>
             </div>
             <div>

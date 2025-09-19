@@ -33,12 +33,8 @@ function Home() {
 
 
 
-                    <div className="flex flex-row gap-4">
-                            <Button>  <Link
-                                href="/registration"
-                                className='text-xl'
-
-                            >
+                   <div className="flex flex-row gap-4">
+                            <Button>  <Link href="/registration" className='text-xl'>
                                 Register Now
                                 <FaRocket className="inline ml-2" />
                             </Link></Button>
