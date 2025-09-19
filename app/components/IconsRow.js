@@ -17,7 +17,7 @@ import {
 
 
 
-  
+
 const items = [
     { Icon: FaLeaf, label: "Plant", bg: "bg-orange-400" },
     { Icon: FaGlobe, label: "Globe", bg: "bg-sky-400" },
@@ -46,6 +46,8 @@ const items = [
           <span
             key={i}
             title={label}
+
+            
             aria-label={label}
             /* If you use Tailwind, the bg classes above will work. */
             className={`${bg} inline-flex items-center justify-center rounded p-3`}
