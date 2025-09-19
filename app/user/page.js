@@ -26,7 +26,7 @@ import {
 
 export default function UserPage() {
   const { data: session, status } = useSession();
-  const router = useRouter();
+
   const [userStats, setUserStats] = useState({
     totalEvents: 0,
     totalPayments: 0,
@@ -34,11 +34,7 @@ export default function UserPage() {
     lastActivity: null
   });
 
-  useEffect(() => {
-    if (status === "unauthenticated") {
-      router.push("/log-in");
-    }
-  }, [status, router]);
+ 
 
   useEffect(() => {
     if (session?.user) {
@@ -81,7 +77,7 @@ export default function UserPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen mt-36 bg-gray-50 py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
