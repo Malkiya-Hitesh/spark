@@ -3,20 +3,19 @@
 
 :root {
   --bg-color: #C3C3C3;
-  --main-color:#69489D ;
---sec-main-color:#FBAE42;
+  --main-color: #69489D;
+  --sec-main-color: #FBAE42;
+
+
+  --text-color: #3B3B3B;
 
 
 
 
-  --text-color: #F4F1DE;
-
-  
   --sec-bg-color: #262840;
 
-  --sec-primary-color: ;
   --white-color: #F5F5F5;
-  --text-color: #3B3B3B;
+
   --secondary-red: #FF5E57;
   --secondary: #00C2A8;
   --secondary-blue: #70C1FF;
