@@ -39,23 +39,26 @@ const items = [
     { Icon: FaFish, label: "Marine", bg: "bg-rose-400" }
   ];
   
-  export  function IconsRow({ size = 77 }) {
+  export  function IconsRow({ size = 24 }) {
     return (
-      <div style={{ display: "flex", gap: 8, alignItems: "center", padding: 6 }}>
-        {items.map(({ Icon, label, bg }, i) => (
-          <span
-            key={i}
-            title={label}
 
-            
-            aria-label={label}
-            /* If you use Tailwind, the bg classes above will work. */
-            className={`${bg} inline-flex items-center justify-center rounded p-3`}
-            style={{ width: "48px", height: "48px" }}
-          >
-            <Icon size={size} />
-          </span>
-        ))}
-      </div>
+        <div className="flex gap-2 items-center overflow-x-auto scrollbar-hide">
+          {items.map(({ Icon, label, bg }, i) => (
+            <span
+              key={i}
+              title={label}
+              aria-label={label}
+              className={`${bg} inline-flex items-center justify-center rounded-lg p-2 sm:p-3 shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105`}
+              style={{ 
+                width: "40px", 
+                height: "40px",
+                minWidth: "40px"
+              }}
+            >
+              <Icon size={size} className="text-white" />
+            </span>
+          ))}
+        </div>
+    
     );
   }

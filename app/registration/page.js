@@ -3,6 +3,8 @@
 
 import { useRef, useState } from "react";
 import axios from "axios";
+import Sparc from "../components/Sparc";
+import Home from "../components/Home";
 
 export default function Registion() {
   const nameRef = useRef("");
@@ -38,21 +40,23 @@ export default function Registion() {
       };
 
       const saveRes = await axios.post("/api/registration", payload);
+      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSc_pX7axYQfB9c1uhKeHJ4i2xWJXhOXPEF0pKnfUfRUWnqmrA/viewform?usp=preview";
+      return;
 
-      const { data } = await axios.post("/api/pay", payload);
+      // const { data } = await axios.post("/api/pay", payload);
 
-      await openRazorpayCheckout({
-        name: payload.name,
-        email: payload.email,
-        amount: payload.amount,
-        orderId: data.orderId,
-      });
+      // await openRazorpayCheckout({
+      //   name: payload.name,
+      //   email: payload.email,
+      //   amount: payload.amount,
+      //   orderId: data.orderId,
+      // });
 
-      setMessage("Payment flow opened. Complete payment in the popup.");
-    } catch (err) {
-      setMessage(
-        err?.response?.data?.error || err?.message || "Failed to submit"
-      );
+    //   setMessage("Payment flow opened. Complete payment in the popup.");
+    // } catch (err) {
+    //   setMessage(
+    //     err?.response?.data?.error || err?.message || "Failed to submit"
+    //   );
     } finally {
       setLoading(false);
     }
@@ -83,7 +87,7 @@ export default function Registion() {
       name: name,
       description: "Test Transaction",
       image: "https://example.com/your_logo",
-      callback_url: `http://localhost:3001/user`,
+      callback_url: `https://docs.google.com/forms/d/e/1FAIpQLSc_pX7axYQfB9c1uhKeHJ4i2xWJXhOXPEF0pKnfUfRUWnqmrA/viewform?usp=preview`,
       prefill: {
         name: name,
         email: email,
@@ -102,6 +106,7 @@ export default function Registion() {
   };
   return (
     <>
+      <Home/>
       <div className="min-h-screen flex items-center justify-center p-6 mt-36">
         <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
           <h1 className="text-2xl font-semibold">Competition Registration</h1>
@@ -196,13 +201,13 @@ export default function Registion() {
               placeholder="School name"
             />
           </div>
-          
+
           <button
             type="submit"
             disabled={loading}
             className="w-full rounded bg-black text-white py-2 disabled:opacity-50"
           >
-            {loading ? "Submitting..." : "Register & Pay"}
+            {loading ? "Submitting..." : "Register"}
           </button>
 
           {message && (

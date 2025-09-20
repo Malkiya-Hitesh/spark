@@ -9,94 +9,70 @@ import { IconsRow } from './IconsRow'
 
 function Home() {
     return (
-        <section className='mt-40 bg-[var(--main-color)]'>
+        <section className='min-h-screen bg-[var(--main-color)] overflow-hidden mt-28'>
+            <div className=' m-auto px-2 '>
+                <div className='grid grid-cols-1 lg:grid-cols-2  justify-center items-center'>
+                    {/* Left Content */}
+                    <div className="mx-auto z-10">
+                        {/* Badge */}
+                        <div className="flex items-center justify-center font-[700] gap-2 bg-[var(--main-color)]/10 border border-[var(--sec-main-color)]/20 rounded-full px-4 py-2 text-[var(--sec-main-color)]  backdrop-blur-sm">
+                            <span className="text-sm sm:text-base lg:text-lg font-medium">let's build the future together</span>
+                        </div>
 
-            {/* Hero Section */}
-            <div className='grid grid-cols-1 lg:grid-cols-[0.8fr_1fr] relative  justify-center overflow-hidden '>
-                {/* Left Content */}
-                <div className="space-y-8 relative">
- 
-                    <div className="absolute -top-10 -right-10 w-20 h-20 bg-[var(--secondary)] rounded-full opacity-30"></div>
-                    <div className="absolute top-20 -left-5 w-16 h-16 bg-[var(--secondary-red)] rounded-full opacity-40"></div>
-                    <div className="absolute top-40 right-0 w-12 h-12 bg-white rounded-full opacity-50"></div>
-                    
-                    {/* Badge */}
-                    <div className="inline-flex items-center font-[700] gap-2 bg-[var(--main-color)]/10 border border-[var(--sec-main-color)]/20 rounded-full px-4 py-2 text-[var(--sec-main-color)]">
-                        <HiOutlineSparkles className="text-lg" />
-                        <span className="text-xl font-medium ">let's build the future together</span>
-                    </div>
+                        {/* Main Heading */}
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-[800] text-[var(--bg-color)] leading-tight relative z-10">
+                            <span className="block">sustainable,</span>
+                            <span className="block">inclusive & full</span>
+                            <span className="block">of possibility!</span>
+                        </h1>
 
-                    {/* Main Heading */}
-                    <h1 className="text-5xl lg:text-6xl font-[800] text-[var(--bg-color)] leading-tight relative z-10">
-                        sustainable, inclusive & full of possibility
-                    </h1>
-
-
-
-                   <div className="flex flex-row gap-4">
-                            <Button>  <Link href="/registration" className='text-xl'>
-                                Register Now
-                                <FaRocket className="inline ml-2" />
-                            </Link></Button>
-                            <SecButton>
+                        {/* Buttons */}
+                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-7">
+                            <Button className="w-full sm:w-auto">
+                                <Link href="/registration" className='text-lg sm:text-xl flex items-center justify-center'>
+                                    Register Now
+                                    <FaRocket className="inline ml-2" />
+                                </Link>
+                            </Button>
+                            <SecButton className="w-full sm:w-auto">
                                 <Link
                                     href="/events"
-                                    className='text-xl'
+                                    className='text-lg sm:text-xl'
                                 >
                                     View Events
                                 </Link>
                             </SecButton>
                         </div>
-                    <div className='absolute bottom-0 left-0'>
-                        <Image 
-                            src='/image/hero.svg'
-                            width={100}
-                            height={100}
-                            alt='hero decoration' />
+
+
                     </div>
 
+                    {/* Right Content - Visual Elements */}
+                    <div className='relative w-full h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden'>
 
+
+
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <Image
+                                className='object-contain max-w-full max-h-full'
+                                src='/image/hero1.png'
+                                width={600}
+                                height={600}
+                                alt='hero main'
+                                priority
+                            />
+                        </div>
+
+
+                    </div>
+             
                 </div>
-
-                {/* Right Content - Visual Elements */}
-                <div className='relative h-[500px] overflow-hidden' >
-                    {/* Background shapes */}
-                 
-                    
-                    {/* Sparkle decorations */}
-                    <Image className='absolute  bottom-[-22px] w-svh right-[-215px]'
-                        src='/image/hero.svg'
-                        width={80000}
-                        height={80000}
-                        alt='hero main' />
-                    <Image className='absolute bottom-0 w-full right-0 '
-                        src='/image/bg.png'
-                        width={1000}
-                        height={800}
-                        alt='hero background' />
-                    <Image className='absolute bottom-[-22px] w-[85%] right-[-95px]'
-                        src='/image/hero.png'
-                        width={800}
-                        height={800}
-                        alt='hero main' />
-                    <Image className='absolute top-[10px] right-[22px]'
-                        src='/image/tan90.png'
-                        width={150}
-                        height={150}
-                        alt='hero decoration' />
-                    <Image className='absolute top-[145px]  w-[29%] right-[22px]'
-                        src='/image/top.png'
-                        width={1000}
-                        height={1000}
-                        alt='hero top' />
-                    
-
-                  
-                </div>
-                <IconsRow/>
+                <div className="flex justify-center items-center">
+                        <IconsRow />
+                    </div>
             </div>
 
-            
+            {/* Icons Row */}
 
         </section>
     )
