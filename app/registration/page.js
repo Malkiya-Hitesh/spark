@@ -158,7 +158,7 @@ export default function Registion() {
             />
           </div>
           <div className="flex flex-col gap-1">
-            <label htmlFor="parentContact" className="text-sm">Parent's Contact Number</label>
+            <label htmlFor="parentContact" className="text-sm">Parent&apos;s Contact Number</label>
             <input
               id="parentContact"
               type="tel"
@@ -169,7 +169,7 @@ export default function Registion() {
             />
           </div>
           <div className="flex flex-col gap-1">
-            <label htmlFor="teacherName" className="text-sm">School Teacher's Name (Mentor)</label>
+            <label htmlFor="teacherName" className="text-sm">School Teacher&apos;s Name (Mentor)</label>
             <input
               id="teacherName"
               type="text"
@@ -180,7 +180,7 @@ export default function Registion() {
             />
           </div>
           <div className="flex flex-col gap-1">
-            <label htmlFor="teacherContact" className="text-sm">School Teacher's Contact Number</label>
+            <label htmlFor="teacherContact" className="text-sm">School Teacher&apos;s Contact Number</label>
             <input
               id="teacherContact"
               type="tel"

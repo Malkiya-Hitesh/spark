@@ -16,7 +16,7 @@ function Home() {
                     <div className="mx-auto z-10">
                         {/* Badge */}
                         <div className="flex items-center justify-center font-[700] gap-2 bg-[var(--main-color)]/10 border border-[var(--sec-main-color)]/20 rounded-full px-4 py-2 text-[var(--sec-main-color)]  backdrop-blur-sm">
-                            <span className="text-sm sm:text-base lg:text-lg font-medium">let's build the future together</span>
+                            <span className="text-sm sm:text-base lg:text-lg font-medium">let&apos;s build the future together</span>
                         </div>
 
                         {/* Main Heading */}

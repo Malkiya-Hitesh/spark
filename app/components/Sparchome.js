@@ -107,10 +107,10 @@ export default function AboutPage() {
           <div className="container">
             <h2>Why SPARC Matters?</h2>
             <p>
-              SPARC is more than just a competition — it's a movement to nurture young innovators.
+              SPARC is more than just a competition — it&apos;s a movement to nurture young innovators.
               By giving students the space to explore real-world challenges and design creative
               solutions, SPARC builds critical thinking, problem-solving, and leadership skills
-              that go beyond the classroom. For students, it's the start of a journey — from
+              that go beyond the classroom. For students, it&apos;s the start of a journey — from
               showcasing ideas to gaining mentorship, exposure, and inspiration from leading
               scientists, entrepreneurs, and changemakers.
               <br /><br />

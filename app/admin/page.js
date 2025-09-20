@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 export default function AdminPage() {
   const [users, setUsers] = useState([])
@@ -199,7 +200,7 @@ export default function AdminPage() {
                       <div className="flex items-center">
                         <div className="flex-shrink-0 h-10 w-10">
                           {user.image ? (
-                            <img className="h-10 w-10 rounded-full" src={user.image} alt={user.name} />
+                            <Image className="h-10 w-10 rounded-full" src={user.image} alt={user.name} width={40} height={40} />
                           ) : (
                             <div className="h-10 w-10 rounded-full bg-gray-300 flex items-center justify-center">
                               <span className="text-sm font-medium text-gray-700">

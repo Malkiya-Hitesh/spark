@@ -18,8 +18,8 @@ export default function AboutPage() {
             </div>
 
             <div className="right-col">
-              <div className="quote">"Whfere Curiosity Meets Action"</div>
-              <div className="tagline">Join India's Biggest<br /> <strong> Sustainability Challenge.</strong></div>
+              <div className="quote">&ldquo;Where Curiosity Meets Action&rdquo;</div>
+              <div className="tagline">Join India&apos;s Biggest<br /> <strong> Sustainability Challenge.</strong></div>
               <div className="sub">Be part of SPARC 2026 — innovation, sustainability and collaborative experimentation across India. Teams, ideas and prototypes welcome.</div>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <h3>THEME</h3>
-                <p>Learn what we're exploring</p>
+                <p>Learn what we&apos;re exploring</p>
               </div>
             </div>
             <div className="tile t-timeline" role="listitem">
@@ -107,10 +107,10 @@ export default function AboutPage() {
           <div className="container">
             <h2>Why SPARC Matters?</h2>
             <p>
-              SPARC is more than just a competition — it's a movement to nurture young innovators.
+              SPARC is more than just a competition — it&apos;s a movement to nurture young innovators.
               By giving students the space to explore real-world challenges and design creative
               solutions, SPARC builds critical thinking, problem-solving, and leadership skills
-              that go beyond the classroom. For students, it's the start of a journey — from
+              that go beyond the classroom. For students, it&apos;s the start of a journey — from
               showcasing ideas to gaining mentorship, exposure, and inspiration from leading
               scientists, entrepreneurs, and changemakers.
               <br /><br />
