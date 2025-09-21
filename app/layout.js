@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "SPARC 2026",
     images: [
       {
-        url: "/image/hero1.png",
+        url: "/image/logo.png",
         width: 1200,
         height: 630,
         alt: "SPARC 2026 Innovation Award",
