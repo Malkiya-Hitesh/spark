@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <link rel="icon" href="/image/logo.png" sizes="32x32" />
-      <link rel="icon"  href="/image/logo.png"  sizes="32x32" />
+      <link rel="icon"  href="/image/logo.png"   />
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords.join(", ")} />
         <meta name="author" content="Spark Team" />
