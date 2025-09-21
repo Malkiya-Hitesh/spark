@@ -39,7 +39,7 @@ export const metadata = {
     title: "SPARC 2026 – Innovation Award",
     description:
       "India s biggest sustainability challenge for students. Register now and showcase your ideas in clean energy, health, cities, and inclusive growth.",
-    images: ["/image/hero1.png"],
+    images: ["/image/logo.png"],
     creator: "@spark_team", // replace with your Twitter handle if available
   },
 };
@@ -49,6 +49,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <link rel="icon" href="/image/logo.png" sizes="any" />
+      <link rel="icon" type="image/svg+xml" href="/image/logo.png" />
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords.join(", ")} />
         <meta name="author" content="Spark Team" />
