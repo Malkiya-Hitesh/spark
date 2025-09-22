@@ -21,7 +21,7 @@ export const metadata = {
     title: "SPARC 2026 – India’s Biggest Sustainability Challenge",
     description:
       "Join SPARC 2026 to showcase innovative projects in sustainability, clean energy, health, and inclusive growth. Win recognition, mentorship, and prizes.",
-    url: process.env.NEXTAUTH_URL,
+    url: "https://spark-fp6r.vercel.app/",
     siteName: "SPARC 2026",
     images: [
       {
