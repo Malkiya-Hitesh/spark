@@ -61,6 +61,7 @@ function Navbar() {
           aria-label="Toggle menu"
         >
         <HiX /> 
+        
         </button>
             <MobileNavLink params='/' onClick={toggleMenu}>
               <IoHomeOutline className='text-xl'/> home
