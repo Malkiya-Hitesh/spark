@@ -16,7 +16,7 @@ export const metadata = {
     "Sustainable Cities",
     "Inclusive Growth",
   ],
-  authors: [{ name: "SPARC Team", url: process.env.NEXTAUTH_URL }],
+  authors: [{ name:"malkiya hitesh , Rishu Rishav ", url: process.env.NEXTAUTH_URL }],
   openGraph: {
     title: "SPARC 2026 – India’s Biggest Sustainability Challenge",
     description:
@@ -47,24 +47,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
       <link rel="icon" href="/image/logo.png" sizes="32x32" />
       <link rel="icon"  href="/image/logo.png"   />
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords.join(", ")} />
-        <meta name="author" content="Spark Team" />
-        <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
-        <meta property="og:url" content={metadata.openGraph.url} />
-        <meta property="og:site_name" content={metadata.openGraph.siteName} />
-        <meta property="og:image" content={metadata.openGraph.images[0].url} />
-        <meta property="og:locale" content={metadata.openGraph.locale} />
-        <meta property="og:type" content={metadata.openGraph.type} />
-        <meta name="twitter:card" content={metadata.twitter.card} />
-        <meta name="twitter:title" content={metadata.twitter.title} />
-        <meta name="twitter:description" content={metadata.twitter.description} />
-        <meta name="twitter:image" content={metadata.twitter.images[0]} />
+   
         <title>{metadata.title}</title>
       </head>
       <body className="min-h-screen">
