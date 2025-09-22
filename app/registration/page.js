@@ -24,8 +24,8 @@ export default function Registion() {
     setMessage("");
     setLoading(true);
     try {
-      const ok = await loadRazorpayScript();
-      if (!ok) throw new Error("Razorpay SDK failed to load");
+      // const ok = await loadRazorpayScript();
+      // if (!ok) throw new Error("Razorpay SDK failed to load");
 
       const payload = {
         name: nameRef.current.value,
@@ -53,57 +53,57 @@ export default function Registion() {
       // });
 
     //   setMessage("Payment flow opened. Complete payment in the popup.");
-    // } catch (err) {
-    //   setMessage(
-    //     err?.response?.data?.error || err?.message || "Failed to submit"
-    //   );
+    } catch (err) {
+      setMessage(
+        err?.response?.data?.error || err?.message || "Failed to submit"
+      );
     } finally {
       setLoading(false);
     }
   };
 
-  const loadRazorpayScript = () => {
-    return new Promise((resolve, reject) => {
-      if (typeof window === "undefined") return resolve(false);
-      if (document.getElementById("razorpay-sdk")) return resolve(true);
-      const script = document.createElement("script");
-      script.id = "razorpay-sdk";
-      script.src = "https://checkout.razorpay.com/v1/checkout.js";
-      script.onload = () => resolve(true);
-      script.onerror = () => reject(new Error("Failed to load Razorpay SDK"));
-      document.body.appendChild(script);
-    });
-  };
+  // const loadRazorpayScript = () => {
+  //   return new Promise((resolve, reject) => {
+  //     if (typeof window === "undefined") return resolve(false);
+  //     if (document.getElementById("razorpay-sdk")) return resolve(true);
+  //     const script = document.createElement("script");
+  //     script.id = "razorpay-sdk";
+  //     script.src = "https://checkout.razorpay.com/v1/checkout.js";
+  //     script.onload = () => resolve(true);
+  //     script.onerror = () => reject(new Error("Failed to load Razorpay SDK"));
+  //     document.body.appendChild(script);
+  //   });
+  // };
 
-  const openRazorpayCheckout = async ({ orderId, name, email, amount = 100 }) => {
-    const key = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID;
+  // const openRazorpayCheckout = async ({ orderId, name, email, amount = 100 }) => {
+  //   const key = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID;
 
-    const opstion = {
-      key,
-      order_id: orderId,
-      theme: { color: "#111111" },
-      amount: amount,
-      currency: "INR",
-      name: name,
-      description: "Test Transaction",
-      image: "https://example.com/your_logo",
-      callback_url: `https://docs.google.com/forms/d/e/1FAIpQLSc_pX7axYQfB9c1uhKeHJ4i2xWJXhOXPEF0pKnfUfRUWnqmrA/viewform?usp=preview`,
-      prefill: {
-        name: name,
-        email: email,
-        contact: yourContactRef.current.value,
-      },
-      notes: {
-        address: "Razorpay Corporate Office",
-      },
-    };
+  //   const opstion = {
+  //     key,
+  //     order_id: orderId,
+  //     theme: { color: "#111111" },
+  //     amount: amount,
+  //     currency: "INR",
+  //     name: name,
+  //     description: "Test Transaction",
+  //     image: "https://example.com/your_logo",
+  //     callback_url: `https://docs.google.com/forms/d/e/1FAIpQLSc_pX7axYQfB9c1uhKeHJ4i2xWJXhOXPEF0pKnfUfRUWnqmrA/viewform?usp=preview`,
+  //     prefill: {
+  //       name: name,
+  //       email: email,
+  //       contact: yourContactRef.current.value,
+  //     },
+  //     notes: {
+  //       address: "Razorpay Corporate Office",
+  //     },
+  //   };
 
-    const rzp = new window.Razorpay(opstion);
-    rzp.on("payment.failed", function (response) {
-      setMessage(response?.error?.description || "Payment failed");
-    });
-    rzp.open();
-  };
+  //   const rzp = new window.Razorpay(opstion);
+  //   rzp.on("payment.failed", function (response) {
+  //     setMessage(response?.error?.description || "Payment failed");
+  //   });
+  //   rzp.open();
+  // };
   return (
     <>
       <Home/>

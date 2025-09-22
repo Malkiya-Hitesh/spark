@@ -36,8 +36,8 @@ export async function POST(request) {
 export async function GET() {
   try {
     await connectDB()
-    const regs = await Registration.find().sort({ createdAt: -1 })
-    return NextResponse.json({ success: true, registrations: regs })
+   
+    return NextResponse.json({ success: true, registrations: "ok" })
   } catch (err) {
     return NextResponse.json({ error: err.message || 'Server error' }, { status: 500 })
   }
