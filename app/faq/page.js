@@ -20,7 +20,7 @@ export default function FAQPage() {
       questions: [
         {
           question: "What is SPARC 2026?",
-          answer: "SPARC 2026 (Sustainable Project And Research Challenge) is India's biggest sustainability challenge for students. It's a platform designed to recognize and celebrate creativity, problem-solving, and innovative thinking among young students, encouraging the development of ideas, projects, and solutions that address real-life challenges through science, technology, and inventive approaches. Beyond individual recognition, schools also benefit, with standout institutions having the chance to win a fully-equipped STEM Lab and other resources that promote hands-on learning."
+          answer: "SPARC 2026 (Sustainable Project And Research Challenge) is India&apos;s biggest sustainability challenge for students. It&apos;s a platform designed to recognize and celebrate creativity, problem-solving, and innovative thinking among young students, encouraging the development of ideas, projects, and solutions that address real-life challenges through science, technology, and inventive approaches. Beyond individual recognition, schools also benefit, with standout institutions having the chance to win a fully-equipped STEM Lab and other resources that promote hands-on learning."
         },
         {
           question: "Who can participate in SPARC 2026?",
@@ -41,7 +41,7 @@ export default function FAQPage() {
       questions: [
         {
           question: "How do I register for SPARC 2026?",
-          answer: "You can register for SPARC 2026 by filling out the online form and paying the registration fee of INR 100. Click the 'Register Now' button on our website to access the official registration form."
+          answer: "You can register for SPARC 2026 by filling out the online form and paying the registration fee of INR 100. Click the &apos;Register Now&apos; button on our website to access the official registration form."
         },
         {
           question: "What is the registration deadline?",
@@ -57,7 +57,7 @@ export default function FAQPage() {
         },
         {
           question: "What information do I need for registration?",
-          answer: "You'll need basic personal information, school details, contact information, and a brief description of your project idea or area of interest. Make sure to have all your details ready before starting the registration process."
+          answer: "You&apos;ll need basic personal information, school details, contact information, and a brief description of your project idea or area of interest. Make sure to have all your details ready before starting the registration process."
         }
       ]
     },
@@ -70,7 +70,7 @@ export default function FAQPage() {
         },
         {
           question: "Are there any specific requirements for project submissions?",
-          answer: "Projects should be original, well-researched, and demonstrate clear understanding of the chosen theme. You'll need to provide project documentation, prototypes (if applicable), and present your work during the evaluation phase. Detailed guidelines will be provided after registration."
+          answer: "Projects should be original, well-researched, and demonstrate clear understanding of the chosen theme. You&apos;ll need to provide project documentation, prototypes (if applicable), and present your work during the evaluation phase. Detailed guidelines will be provided after registration."
         },
         {
           question: "Can I change my project theme after registration?",
@@ -91,14 +91,14 @@ export default function FAQPage() {
         },
         {
           question: "What happens after I submit in Round 1?",
-          answer: "You'll hear whether you have qualified for Round 2. The longlist (Round 2 qualifiers) will be announced on November 15, 2025."
+          answer: "You&apos;ll hear whether you have qualified for Round 2. The longlist (Round 2 qualifiers) will be announced on November 15, 2025."
         },
         {
           question: "What is expected in Round 2 / Finale?",
-          answer: "Round 2 requires building a working prototype of your idea. You'll need to submit a video showing how the model works and how it solves the problem chosen. For the Finale: scheduled for February 1, 2026 at a centrally located venue. Details will be shared by December 2025."
+          answer: "Round 2 requires building a working prototype of your idea. You&apos;ll need to submit a video showing how the model works and how it solves the problem chosen. For the Finale: scheduled for February 1, 2026 at a centrally located venue. Details will be shared by December 2025."
         },
         {
-          question: "If I didn't make past Round 1 or 2, can I still attend?",
+          question: "If I didn&apos;t make past Round 1 or 2, can I still attend?",
           answer: "Yes. Everyone is welcome to attend SPARC 2026 (including family & friends). The event is open to all interested participants and supporters."
         }
       ]
@@ -129,7 +129,7 @@ export default function FAQPage() {
         },
         {
           question: "What is Theme 2: Health and Wellbeing for All?",
-          answer: "This theme is about making sure everyone can live happy, safe, and healthy lives. It includes access to affordable healthcare, safe food, exercise, hygiene, and support for mental health. It's also about creating tools that help those with disabilities or limited access to healthcare. Being healthy means eating clean food, playing and exercising, staying calm, and helping everyone live happily and safely."
+          answer: "This theme is about making sure everyone can live happy, safe, and healthy lives. It includes access to affordable healthcare, safe food, exercise, hygiene, and support for mental health. It&apos;s also about creating tools that help those with disabilities or limited access to healthcare. Being healthy means eating clean food, playing and exercising, staying calm, and helping everyone live happily and safely."
         },
         {
           question: "What is Theme 3: Clean Energy and Climate Action?",
@@ -150,7 +150,7 @@ export default function FAQPage() {
         },
         {
           question: "What activities were available at SPARC 2025?",
-          answer: "Beyond the competition, SPARC 2025 featured a Fun-Filled Activity Zone with Robo Soccer, Robo Race, live lab experiments, telescope viewing, and more. There were inspiring sessions with talks by Dr. V. Veerappan (Co-Founder, Tessolve) and Mrs. Kumari Shibulal, live demonstrations of Bernoulli's Principle, and an entrepreneur panel."
+          answer: "Beyond the competition, SPARC 2025 featured a Fun-Filled Activity Zone with Robo Soccer, Robo Race, live lab experiments, telescope viewing, and more. There were inspiring sessions with talks by Dr. V. Veerappan (Co-Founder, Tessolve) and Mrs. Kumari Shibulal, live demonstrations of Bernoulli&apos;s Principle, and an entrepreneur panel."
         },
         {
           question: "Who were some of the young innovators at SPARC 2025?",
@@ -163,11 +163,11 @@ export default function FAQPage() {
       questions: [
         {
           question: "Who can I contact for technical support?",
-          answer: "For technical support, registration issues, or general inquiries, please contact us at: Email: hello@tan-ninety.com • Phone: +91 9538244577. We're here to help ensure your SPARC 2026 experience is smooth and successful."
+          answer: "For technical support, registration issues, or general inquiries, please contact us at: Email: hello@tan-ninety.com • Phone: +91 9538244577. We&apos;re here to help ensure your SPARC 2026 experience is smooth and successful."
         },
         {
           question: "What if I have questions not covered in this FAQ?",
-          answer: "If you have specific questions not addressed in our FAQ, please don't hesitate to reach out to our support team. We're committed to providing clear and helpful responses to all participant inquiries."
+          answer: "If you have specific questions not addressed in our FAQ, please don&apos;t hesitate to reach out to our support team. We&apos;re committed to providing clear and helpful responses to all participant inquiries."
         },
         {
           question: "How can I stay updated about SPARC 2026?",
@@ -197,7 +197,7 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-[var(--white-color)] max-w-2xl mx-auto">
-            Find answers to common questions about SPARC 2026. Can't find what you're looking for? 
+            Find answers to common questions about SPARC 2026. Can&apos;t find what you&apos;re looking for? 
             Contact our support team for assistance.
           </p>
         </div>
