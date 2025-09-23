@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: "SPARC 2026 – Innovation Award | Sustainability Challenge",
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div className="max-w-[1200px] mx-auto">
           {children}
+          <SpeedInsights />
         </div>
       </body>
     </html>

@@ -197,7 +197,7 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-[var(--white-color)] max-w-2xl mx-auto">
-            Find answers to common questions about SPARC 2026. Can&apos;t find what you&apos;re looking for? 
+            Find answers to common questions about SPARC 2026. Can&apos;t  find what you&apos;re looking for? 
             Contact our support team for assistance.
           </p>
         </div>
