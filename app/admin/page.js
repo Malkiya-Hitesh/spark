@@ -18,11 +18,13 @@ export default function AdminPage() {
   const fetchUsers = async () => {
     try {
       const response = await fetch('/api/admin/users')
+      console.log(response);
       const data = await response.json()
       if (!response.ok) throw new Error(data.error || 'Failed to fetch users')
       setUsers(data.users)
       setStats(data.stats)
     } catch (err) {
+      console.log(err);
       setError(err.message)
     } finally {
       setLoading(false)
@@ -62,6 +64,7 @@ export default function AdminPage() {
   }
 
   if (error) {
+    console.log(error);
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
